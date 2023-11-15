@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMaster.master.cs" Inherits="StayEsay.View.User.UserMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+     <link href="../../Asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>stayesay</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../Asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../../Asset/css/fontawesome.css" />
+    <link rel="stylesheet" href="../../Asset/css/admin.css" />
+    <link rel="stylesheet" href="../../Asset/css/owl.css" />
+    <link rel="stylesheet" href="../../Asset/css/lightbox.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <br />  
+    
+
+</head>
+<body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">stayesay
+                  
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="home.aspx" class="active">Acceuil</a></li>
+                            <li class="scroll-to-section"><a href="apropos.aspx">À propos de nous</a></li> 
+                            <li class="scroll-to-section"><a href="restaurants.aspx">Restaurants</a></li>
+                             <li class="scroll-to-section"><a href="hotels.aspx">Hôtels</a></li>
+                              <li class="scroll-to-section"><a href="Moncompte.aspx"><i class="fas fa-user"></i></a></li>
+
+
+                           <li class="scroll-to-section"><a href=" /View/Login.aspx"><i class="fa fa-sign-in"></i> </a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br /><br /><br />
+    <!-- ***** Header Area End ***** -->
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="Mybody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <footer style="background-color: #fcf5f5;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="about footer-item">
+                        <div class="logo">
+                            <br>
+                            <h4>stayEsay</h4>
+                            <p>
+                                Notre objectif est de simplifier votre vie en vous offrant des solutions innovantes et pratiques.
+                                <p>
+                                    <br>
+                                    <br>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="services footer-item">
+                        <br>
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="home.aspx">Acceuil</a></li>
+                            <li><a href="apropos.aspx">À propos de nous</a></li>
+                            <li><a href="restaurants.aspx">Restaurants</a></li>
+                            <li><a href="hotels.aspx">Hôtels</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="community footer-item">
+                        <br>
+                        <h4>CONTACT</h4>
+                      
+                        <p><i class="fad fa-envelope"></i>stayesay16@gmail.com</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i>+ 01 234 567 88</p>
+                        <p><i class="fa fa-print" aria-hidden="true"></i>+ 01 234 567 89</p>
+
+                    </div>
+                </div>
+                
+                <div class="col-lg-12">
+                    <div class="copyright">
+                        <br>
+                        <a rel="nofollow" href="https://templatemo.com" title="#"></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of .container -->
+</body>
+</html>

@@ -1,0 +1,788 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D389795A-1CF7-44FA-9E8D-A4DB6BFDE706}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StayEsay</RootNamespace>
+    <AssemblyName>StayEsay</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Asset\css\admin.css" />
+    <Content Include="Asset\css\animated.css" />
+    <Content Include="Asset\css\bootstrap.min.css" />
+    <Content Include="Asset\css\boxicon.min.css" />
+    <Content Include="Asset\css\commentaire.css" />
+    <Content Include="Asset\css\flex-slider.css" />
+    <Content Include="Asset\css\fontawesome.css" />
+    <Content Include="Asset\css\hotel.css" />
+    <Content Include="Asset\css\inscription.css" />
+    <Content Include="Asset\css\lightbox.css" />
+    <Content Include="Asset\css\login.css" />
+    <Content Include="Asset\css\main.css" />
+    <Content Include="Asset\css\owl.css" />
+    <Content Include="Asset\css\table.css" />
+    <Content Include="Asset\css\templatemo.css" />
+    <Content Include="Asset\css\test.css" />
+    <Content Include="Asset\fonts\flexslider-icon.svg" />
+    <Content Include="Asset\fonts\fontawesome-webfont.svg" />
+    <Content Include="Asset\fonts\line-awesome.svg" />
+    <Content Include="Asset\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="Asset\fonts\material-icon\css\material-design-iconic-font.css" />
+    <Content Include="Asset\fonts\material-icon\css\material-design-iconic-font.min.css" />
+    <Content Include="Asset\fonts\material-icon\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="Asset\fonts\material-icon\material-design-iconic-font.min.css" />
+    <Content Include="Asset\fonts\Simple-Line-Icons.svg" />
+    <Content Include="Asset\fonts\slick.svg" />
+    <Content Include="Asset\fonts\themify.svg" />
+    <Content Include="Asset\fonts\weathericons-regular-webfont.svg" />
+    <Content Include="Asset\images\bg-themes\1.png" />
+    <Content Include="Asset\images\bg-themes\2.png" />
+    <Content Include="Asset\images\bg-themes\3.png" />
+    <Content Include="Asset\images\bg-themes\4.png" />
+    <Content Include="Asset\images\bg-themes\5.png" />
+    <Content Include="Asset\images\bg-themes\6.png" />
+    <Content Include="Asset\images\dashbord\1.png" />
+    <Content Include="Asset\images\dashbord\add2.gif" />
+    <Content Include="Asset\images\dashbord\appel-telephonique.gif" />
+    <Content Include="Asset\images\dashbord\7.png" />
+    <Content Include="Asset\images\dashbord\cc-primary.png" />
+    <Content Include="Asset\images\dashbord\cc-success.png" />
+    <Content Include="Asset\images\dashbord\cc-warning.png" />
+    <Content Include="Asset\images\dashbord\chart-success.png" />
+    <Content Include="Asset\images\dashbord\chart.png" />
+    <Content Include="Asset\images\dashbord\hotel.png" />
+    <Content Include="Asset\images\dashbord\signe-de-lhotel.gif" />
+    <Content Include="Asset\images\dashbord\wallet-info.png" />
+    <Content Include="Asset\images\dashbord\wallet.png" />
+    <Content Include="Asset\images\dashbord\welcome.gif" />
+    <Content Include="Asset\images\gallery\car.png" />
+    <Content Include="Asset\images\gallery\cocktail.png" />
+    <Content Include="Asset\images\gallery\favicon.ico" />
+    <Content Include="Asset\images\gallery\cd-icon-navigation.svg" />
+    <Content Include="Asset\images\gallery\gallery-1.jpg" />
+    <Content Include="Asset\images\gallery\key.png" />
+    <Content Include="Asset\images\gallery\product_single_02.jpg" />
+    <Content Include="Asset\images\gallery\room1.jpg" />
+    <Content Include="Asset\images\gallery\table-a-dinner.png" />
+    <Content Include="Asset\images\gallery\user.png" />
+    <Content Include="Asset\images\gallery\wifi.png" />
+    <Content Include="Asset\images\header-bg.png" />
+    <Content Include="Asset\images\dashbord\man-with-laptop-light.png" />
+    <Content Include="Asset\images\dashbord\paypal.png" />
+    <Content Include="Asset\images\icons\background.jpg" />
+    <Content Include="Asset\images\icons\bloom-chat-conversation.gif" />
+    <Content Include="Asset\images\icons\bravo.gif" />
+    <Content Include="Asset\images\icons\Catering service-bro.png" />
+    <Content Include="Asset\images\icons\cles.gif" />
+    <Content Include="Asset\images\icons\client.gif" />
+    <Content Include="Asset\images\icons\crayon %281%29.png" />
+    <Content Include="Asset\images\icons\form-img.jpg" />
+    <Content Include="Asset\images\icons\historique.png" />
+    <Content Include="Asset\images\icons\homme.png" />
+    <Content Include="Asset\images\icons\hotel %281%29.gif" />
+    <Content Include="Asset\images\icons\logo stay .jpg" />
+    <Content Include="Asset\images\icons\oeil %281%29.png" />
+    <Content Include="Asset\images\icons\ouvert.png" />
+    <Content Include="Asset\images\icons\shop_01.jpg" />
+    <Content Include="Asset\images\icons\sondage.png" />
+    <Content Include="Asset\images\icons\user-interface.png" />
+    <Content Include="Asset\images\icons\user.gif" />
+    <Content Include="Asset\images\icons\utilisateur.png" />
+    <Content Include="Asset\images\logo-icon.png" />
+    <Content Include="Asset\images\restaurant\abou-sofiane-1007043058-original.jpg" />
+    <Content Include="Asset\images\restaurant\Coffee shop.gif" />
+    <Content Include="Asset\images\restaurant\Coffee shop.mp4" />
+    <Content Include="Asset\images\restaurant\Dar-El-Jeld.jpg" />
+    <Content Include="Asset\images\restaurant\dar-el-marsa.jpg" />
+    <Content Include="Asset\images\restaurant\Dar_El_Marsa_9.jpg" />
+    <Content Include="Asset\images\restaurant\Eating together-amico.svg" />
+    <Content Include="Asset\images\restaurant\f_img_1.png" />
+    <Content Include="Asset\images\restaurant\Hotel Booking-amico.svg" />
+    <Content Include="Asset\images\restaurant\Hotel-2978-20230102-094217.jpg" />
+    <Content Include="Asset\images\restaurant\Medium-ZafiroPalaceHotel_General Views_0621_Sel33_ret.jpg" />
+    <Content Include="Asset\images\restaurant\reception.jpg" />
+    <Content Include="Asset\images\restaurant\restaurant.jpg" />
+    <Content Include="Asset\images\restaurant\restaurant1.jpg" />
+    <Content Include="Asset\images\restaurant\sushi-muraguchi.jpg" />
+    <Content Include="Asset\images\restaurant\Valentine%27s Day surprise %281%29.gif" />
+    <Content Include="Asset\images\templatemo-eduwell.png" />
+    <Content Include="Asset\images\timeline\angular-icon.svg" />
+    <Content Include="Asset\images\timeline\bootstrap-4.svg" />
+    <Content Include="Asset\images\timeline\cd-arrow.svg" />
+    <Content Include="Asset\images\timeline\cd-icon-location.svg" />
+    <Content Include="Asset\images\timeline\cd-icon-movie.svg" />
+    <Content Include="Asset\images\timeline\cd-icon-picture.svg" />
+    <Content Include="Asset\images\timeline\css-3.svg" />
+    <Content Include="Asset\images\timeline\html5.svg" />
+    <Content Include="Asset\images\timeline\react.svg" />
+    <Content Include="Asset\js\custom.js" />
+    <Content Include="Asset\js\dashboards-analytics.js" />
+    <Content Include="Asset\js\global.js" />
+    <Content Include="Asset\js\isotope.js" />
+    <Content Include="Asset\js\isotope.min.js" />
+    <Content Include="Asset\js\jquery-3.3.1.min.js" />
+    <Content Include="Asset\js\lightbox.js" />
+    <Content Include="Asset\js\main.js" />
+    <Content Include="Asset\js\owl-carousel.js" />
+    <Content Include="Asset\js\ReservationTable.js" />
+    <Content Include="Asset\js\slick-slider.js" />
+    <Content Include="Asset\js\tabs.js" />
+    <Content Include="Asset\css\repashotel.css" />
+    <Content Include="Asset\vendor\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Asset\vendor\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Asset\vendor\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Asset\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Asset\vendor\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Asset\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Asset\vendor\css\core.css" />
+    <Content Include="Asset\vendor\css\pages\page-account-settings.css" />
+    <Content Include="Asset\vendor\css\pages\page-auth.css" />
+    <Content Include="Asset\vendor\css\pages\page-icons.css" />
+    <Content Include="Asset\vendor\css\pages\page-misc.css" />
+    <Content Include="Asset\vendor\css\theme-default.css" />
+    <Content Include="Asset\vendor\fonts\boxicons.css" />
+    <Content Include="Asset\vendor\fonts\boxicons\boxicons.svg" />
+    <Content Include="Asset\vendor\jquery\jquery.min.js" />
+    <Content Include="Asset\vendor\js\bootstrap.js" />
+    <Content Include="Asset\vendor\js\helpers.js" />
+    <Content Include="Asset\vendor\js\jquery-3.2.1.min.js" />
+    <Content Include="Asset\vendor\js\menu.js" />
+    <Content Include="Asset\vendor\select2\material-design-iconic-font.min.css" />
+    <Content Include="Asset\vendor\select2\select2.min.css" />
+    <Content Include="Asset\vendor\select2\select2.min.js" />
+    <Content Include="View\Administrateur\comptes_fournisseurs.aspx" />
+    <Content Include="View\Administrateur\comptes_utilisateurs.aspx" />
+    <Content Include="View\Administrateur\Dashbord.aspx" />
+    <Content Include="View\Administrateur\detilshotelsacceptes.aspx" />
+    <Content Include="View\Administrateur\gererservicerestaurants.aspx" />
+    <Content Include="View\Administrateur\gerer_profil.aspx" />
+    <Content Include="View\Administrateur\gérerservice.aspx" />
+    <Content Include="View\Administrateur\hotelsaccepter.aspx" />
+    <Content Include="View\Administrateur\hotelsrefuser.aspx" />
+    <Content Include="View\Administrateur\restaurantsaccepter.aspx" />
+    <Content Include="View\Administrateur\restaurantsrefuser.aspx" />
+    <Content Include="View\CodeActivation.aspx" />
+    <Content Include="View\CodeActivationF.aspx" />
+    <Content Include="View\Fournisseur\Chambres.aspx" />
+    <Content Include="View\Fournisseur\changermotdepasse.aspx" />
+    <Content Include="View\Fournisseur\commentairesRestaurants.aspx" />
+    <Content Include="View\Fournisseur\consulterreservations.aspx" />
+    <Content Include="View\Fournisseur\DashboardF.aspx" />
+    <Content Include="View\Fournisseur\gere_profil.aspx" />
+    <Content Include="View\Fournisseur\ImagesServices.aspx" />
+    <Content Include="View\Fournisseur\informationsRestaurant.aspx" />
+    <Content Include="View\Fournisseur\Informations_hotels.aspx" />
+    <Content Include="View\Fournisseur\repashotel.aspx" />
+    <Content Include="View\Fournisseur\tablerestaurant.aspx" />
+    <Content Include="View\Fournisseur\test.aspx" />
+    <Content Include="View\Inscription_Fournisseur.aspx" />
+    <Content Include="View\logout.aspx" />
+    <Content Include="View\Reservation\apropos.aspx" />
+    <Content Include="View\Reservation\ChambresDisponibles.aspx" />
+    <Content Include="View\Reservation\detailshotels.aspx" />
+    <Content Include="View\Reservation\detailsrestaurants.aspx" />
+    <Content Include="View\Reservation\historique.aspx" />
+    <Content Include="View\Reservation\home.aspx" />
+    <Content Include="View\Reservation\hotelreservation.aspx" />
+    <Content Include="View\Reservation\hotels.aspx" />
+    <Content Include="View\Reservation\informations.aspx" />
+    <Content Include="View\Reservation\Moncompte.aspx" />
+    <Content Include="View\Reservation\reservationchambre.aspx" />
+    <Content Include="View\Reservation\reservertable.aspx" />
+    <Content Include="View\Reservation\restaurants.aspx" />
+    <Content Include="View\User\apropos.aspx" />
+    <Content Include="View\User\details_hotel1.aspx" />
+    <Content Include="View\User\Details_Restaurant.aspx" />
+    <Content Include="View\User\historique.aspx" />
+    <Content Include="View\User\home.aspx" />
+    <Content Include="View\User\hotel-user.aspx" />
+    <Content Include="View\User\hotels.aspx" />
+    <Content Include="View\User\Moncompte.aspx" />
+    <Content Include="View\User\reservationtable.aspx" />
+    <Content Include="View\User\reserverchambre.aspx" />
+    <Content Include="View\User\Restaurant-user.aspx" />
+    <Content Include="View\User\restaurants.aspx" />
+    <Content Include="View\User\UserMaster.Master" />
+    <Content Include="Asset\fonts\Flaticon.woff" />
+    <Content Include="Asset\fonts\flexslider-icon.eot" />
+    <Content Include="Asset\fonts\flexslider-icon.ttf" />
+    <Content Include="Asset\fonts\flexslider-icon.woff" />
+    <Content Include="Asset\fonts\fontawesome-webfont.eot" />
+    <Content Include="Asset\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Asset\fonts\fontawesome-webfont.woff" />
+    <Content Include="Asset\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Asset\fonts\FontAwesome.otf" />
+    <Content Include="Asset\fonts\slick.eot" />
+    <Content Include="Asset\fonts\slick.ttf" />
+    <Content Include="Asset\fonts\slick.woff" />
+    <Content Include="Asset\fonts\material-icon\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="Asset\fonts\material-icon\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="Asset\fonts\material-icon\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="Asset\fonts\material-icon\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="Asset\vendor\fonts\boxicons\boxicons.eot" />
+    <Content Include="Asset\vendor\fonts\boxicons\boxicons.ttf" />
+    <Content Include="Asset\vendor\fonts\boxicons\boxicons.woff" />
+    <Content Include="Asset\vendor\fonts\boxicons\boxicons.woff2" />
+    <Content Include="View\Administrateur\administrateurMaster.Master" />
+    <Content Include="View\Fournisseur\FournisseurMaster.Master" />
+    <Content Include="Asset\fonts\line-awesome.ttf" />
+    <Content Include="Asset\fonts\line-awesome.woff" />
+    <Content Include="Asset\fonts\line-awesome.woff2" />
+    <Content Include="Asset\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="Asset\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="Asset\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="Asset\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="Asset\fonts\Simple-Line-Icons.eot" />
+    <Content Include="Asset\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="Asset\fonts\Simple-Line-Icons.woff" />
+    <Content Include="Asset\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="Asset\fonts\themify.eot" />
+    <Content Include="Asset\fonts\themify.ttf" />
+    <Content Include="Asset\fonts\themify.woff" />
+    <Content Include="Asset\fonts\weathericons-regular-webfont.eot" />
+    <Content Include="Asset\fonts\weathericons-regular-webfont.ttf" />
+    <Content Include="Asset\fonts\weathericons-regular-webfont.woff" />
+    <Content Include="Asset\fonts\weathericons-regular-webfont.woff2" />
+    <Content Include="View\Reservation\ReservationMaster.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Asset\css\style.css" />
+    <Content Include="Asset\images\icons\formulaire-dinscription %281%29.png" />
+    <Content Include="Asset\js\main1.js" />
+    <Content Include="Asset\js\stickUp.min.js" />
+    <Content Include="Asset\vendor\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Asset\vendor\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Asset\vendor\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Asset\vendor\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Asset\vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="Asset\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Asset\vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="Asset\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Asset\vendor\bootstrap\js\popper.js" />
+    <Content Include="Asset\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="Asset\vendor\bootstrap\js\tooltip.js" />
+    <Content Include="Asset\vendor\jquery\jquery-3.2.1.min.js" />
+    <None Include="Config\configFile.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Global.asax" />
+    <Content Include="View\Inscription.aspx" />
+    <Content Include="View\Login.aspx" />
+    <Content Include="View\WebForm1.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Administrateur\administrateurMaster.Master.cs">
+      <DependentUpon>administrateurMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Administrateur\administrateurMaster.Master.designer.cs">
+      <DependentUpon>administrateurMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\Administrateur\comptes_fournisseurs.aspx.cs">
+      <DependentUpon>comptes_fournisseurs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Administrateur\comptes_fournisseurs.aspx.designer.cs">
+      <DependentUpon>comptes_fournisseurs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Administrateur\comptes_utilisateurs.aspx.cs">
+      <DependentUpon>comptes_utilisateurs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Administrateur\comptes_utilisateurs.aspx.designer.cs">
+      <DependentUpon>comptes_utilisateurs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Administrateur\Dashbord.aspx.cs">
+      <DependentUpon>Dashbord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Administrateur\Dashbord.aspx.designer.cs">
+      <DependentUpon>Dashbord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Administrateur\detilshotelsacceptes.aspx.cs">
+      <DependentUpon>detilshotelsacceptes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Administrateur\detilshotelsacceptes.aspx.designer.cs">
+      <DependentUpon>detilshotelsacceptes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Administrateur\gererservicerestaurants.aspx.cs">
+      <DependentUpon>gererservicerestaurants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Administrateur\gererservicerestaurants.aspx.designer.cs">
+      <DependentUpon>gererservicerestaurants.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Administrateur\gerer_profil.aspx.cs">
+      <DependentUpon>gerer_profil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Administrateur\gerer_profil.aspx.designer.cs">
+      <DependentUpon>gerer_profil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Administrateur\gérerservice.aspx.cs">
+      <DependentUpon>gérerservice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Administrateur\gérerservice.aspx.designer.cs">
+      <DependentUpon>gérerservice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Administrateur\hotelsaccepter.aspx.cs">
+      <DependentUpon>hotelsaccepter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Administrateur\hotelsaccepter.aspx.designer.cs">
+      <DependentUpon>hotelsaccepter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Administrateur\hotelsrefuser.aspx.cs">
+      <DependentUpon>hotelsrefuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Administrateur\hotelsrefuser.aspx.designer.cs">
+      <DependentUpon>hotelsrefuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Administrateur\restaurantsaccepter.aspx.cs">
+      <DependentUpon>restaurantsaccepter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Administrateur\restaurantsaccepter.aspx.designer.cs">
+      <DependentUpon>restaurantsaccepter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Administrateur\restaurantsrefuser.aspx.cs">
+      <DependentUpon>restaurantsrefuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Administrateur\restaurantsrefuser.aspx.designer.cs">
+      <DependentUpon>restaurantsrefuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\CodeActivation.aspx.cs">
+      <DependentUpon>CodeActivation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\CodeActivation.aspx.designer.cs">
+      <DependentUpon>CodeActivation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\CodeActivationF.aspx.cs">
+      <DependentUpon>CodeActivationF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\CodeActivationF.aspx.designer.cs">
+      <DependentUpon>CodeActivationF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fournisseur\Chambres.aspx.cs">
+      <DependentUpon>Chambres.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Fournisseur\Chambres.aspx.designer.cs">
+      <DependentUpon>Chambres.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fournisseur\changermotdepasse.aspx.cs">
+      <DependentUpon>changermotdepasse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Fournisseur\changermotdepasse.aspx.designer.cs">
+      <DependentUpon>changermotdepasse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fournisseur\commentairesRestaurants.aspx.cs">
+      <DependentUpon>commentairesRestaurants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Fournisseur\commentairesRestaurants.aspx.designer.cs">
+      <DependentUpon>commentairesRestaurants.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fournisseur\consulterreservations.aspx.cs">
+      <DependentUpon>consulterreservations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Fournisseur\consulterreservations.aspx.designer.cs">
+      <DependentUpon>consulterreservations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fournisseur\DashboardF.aspx.cs">
+      <DependentUpon>DashboardF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Fournisseur\DashboardF.aspx.designer.cs">
+      <DependentUpon>DashboardF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fournisseur\FournisseurMaster.Master.cs">
+      <DependentUpon>FournisseurMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Fournisseur\FournisseurMaster.Master.designer.cs">
+      <DependentUpon>FournisseurMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fournisseur\gere_profil.aspx.cs">
+      <DependentUpon>gere_profil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Fournisseur\gere_profil.aspx.designer.cs">
+      <DependentUpon>gere_profil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fournisseur\ImagesServices.aspx.cs">
+      <DependentUpon>ImagesServices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Fournisseur\ImagesServices.aspx.designer.cs">
+      <DependentUpon>ImagesServices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fournisseur\informationsRestaurant.aspx.cs">
+      <DependentUpon>informationsRestaurant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Fournisseur\informationsRestaurant.aspx.designer.cs">
+      <DependentUpon>informationsRestaurant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fournisseur\Informations_hotels.aspx.cs">
+      <DependentUpon>Informations_hotels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Fournisseur\Informations_hotels.aspx.designer.cs">
+      <DependentUpon>Informations_hotels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fournisseur\repashotel.aspx.cs">
+      <DependentUpon>repashotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Fournisseur\repashotel.aspx.designer.cs">
+      <DependentUpon>repashotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fournisseur\tablerestaurant.aspx.cs">
+      <DependentUpon>tablerestaurant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Fournisseur\tablerestaurant.aspx.designer.cs">
+      <DependentUpon>tablerestaurant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Fournisseur\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Fournisseur\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Inscription.aspx.cs">
+      <DependentUpon>Inscription.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Inscription.aspx.designer.cs">
+      <DependentUpon>Inscription.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Inscription_Fournisseur.aspx.cs">
+      <DependentUpon>Inscription_Fournisseur.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Inscription_Fournisseur.aspx.designer.cs">
+      <DependentUpon>Inscription_Fournisseur.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation\apropos.aspx.cs">
+      <DependentUpon>apropos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reservation\apropos.aspx.designer.cs">
+      <DependentUpon>apropos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation\ChambresDisponibles.aspx.cs">
+      <DependentUpon>ChambresDisponibles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reservation\ChambresDisponibles.aspx.designer.cs">
+      <DependentUpon>ChambresDisponibles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation\detailshotels.aspx.cs">
+      <DependentUpon>detailshotels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reservation\detailshotels.aspx.designer.cs">
+      <DependentUpon>detailshotels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation\detailsrestaurants.aspx.cs">
+      <DependentUpon>detailsrestaurants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reservation\detailsrestaurants.aspx.designer.cs">
+      <DependentUpon>detailsrestaurants.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation\historique.aspx.cs">
+      <DependentUpon>historique.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reservation\historique.aspx.designer.cs">
+      <DependentUpon>historique.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reservation\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation\hotelreservation.aspx.cs">
+      <DependentUpon>hotelreservation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reservation\hotelreservation.aspx.designer.cs">
+      <DependentUpon>hotelreservation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation\hotels.aspx.cs">
+      <DependentUpon>hotels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reservation\hotels.aspx.designer.cs">
+      <DependentUpon>hotels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation\informations.aspx.cs">
+      <DependentUpon>informations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reservation\informations.aspx.designer.cs">
+      <DependentUpon>informations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation\Moncompte.aspx.cs">
+      <DependentUpon>Moncompte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reservation\Moncompte.aspx.designer.cs">
+      <DependentUpon>Moncompte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation\reservationchambre.aspx.cs">
+      <DependentUpon>reservationchambre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reservation\reservationchambre.aspx.designer.cs">
+      <DependentUpon>reservationchambre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation\ReservationMaster.Master.cs">
+      <DependentUpon>ReservationMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reservation\ReservationMaster.Master.designer.cs">
+      <DependentUpon>ReservationMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation\reservertable.aspx.cs">
+      <DependentUpon>reservertable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reservation\reservertable.aspx.designer.cs">
+      <DependentUpon>reservertable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reservation\restaurants.aspx.cs">
+      <DependentUpon>restaurants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Reservation\restaurants.aspx.designer.cs">
+      <DependentUpon>restaurants.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\apropos.aspx.cs">
+      <DependentUpon>apropos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\apropos.aspx.designer.cs">
+      <DependentUpon>apropos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\details_hotel1.aspx.cs">
+      <DependentUpon>details_hotel1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\details_hotel1.aspx.designer.cs">
+      <DependentUpon>details_hotel1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\Details_Restaurant.aspx.cs">
+      <DependentUpon>Details_Restaurant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\Details_Restaurant.aspx.designer.cs">
+      <DependentUpon>Details_Restaurant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\historique.aspx.cs">
+      <DependentUpon>historique.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\historique.aspx.designer.cs">
+      <DependentUpon>historique.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\hotel-user.aspx.cs">
+      <DependentUpon>hotel-user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\hotel-user.aspx.designer.cs">
+      <DependentUpon>hotel-user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\hotels.aspx.cs">
+      <DependentUpon>hotels.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\hotels.aspx.designer.cs">
+      <DependentUpon>hotels.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\Moncompte.aspx.cs">
+      <DependentUpon>Moncompte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\Moncompte.aspx.designer.cs">
+      <DependentUpon>Moncompte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\reservationtable.aspx.cs">
+      <DependentUpon>reservationtable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\reservationtable.aspx.designer.cs">
+      <DependentUpon>reservationtable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\reserverchambre.aspx.cs">
+      <DependentUpon>reserverchambre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\reserverchambre.aspx.designer.cs">
+      <DependentUpon>reserverchambre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\Restaurant-user.aspx.cs">
+      <DependentUpon>Restaurant-user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\Restaurant-user.aspx.designer.cs">
+      <DependentUpon>Restaurant-user.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\restaurants.aspx.cs">
+      <DependentUpon>restaurants.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\restaurants.aspx.designer.cs">
+      <DependentUpon>restaurants.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\UserMaster.Master.cs">
+      <DependentUpon>UserMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\User\UserMaster.Master.designer.cs">
+      <DependentUpon>UserMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+    <Folder Include="SavedImages\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50893</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50893/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
